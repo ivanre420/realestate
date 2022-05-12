@@ -1,0 +1,2880 @@
+
+/*General settings*/
+#svg-container {
+    position: absolute;
+    z-index:200;
+    width: 550px;
+    height:1100px;
+    stroke-width: 2;
+    stroke: #2d499d;
+}
+
+#svg-top {
+    position: absolute;
+    z-index:200;
+    width: 1550px;
+    height:5px;
+    stroke-width: 4;
+    stroke: #2d499d;
+    margin-left: 550px;
+}
+
+#svg-bottom {
+    position: absolute;
+    z-index:200;
+    width: 1550px;
+    height:2px;
+    stroke-width: 4;
+    stroke: #2d499d;
+    margin-top: 1100px;
+    margin-left: 550px;
+}
+
+#svg-right {
+    position: absolute;
+    z-index:200;
+    width: 2x;
+    height:1100px;
+    stroke-width: 4;
+    stroke: #2d499d;
+    margin-left: 2250px;
+}
+
+#curtain-1 {
+    position: absolute;
+    z-index:280;
+    width: 1070px;
+    height:10px;
+    stroke-width: 2;
+    stroke-dasharray: 4 1;
+    stroke: #ff0000;
+    margin-left: 1180px;
+    margin-top: 350px;
+}
+
+#curtain-2 {
+    position: absolute;
+    z-index:280;
+    width: 10px;
+    height:355px;
+    stroke-width: 2;
+    stroke-dasharray: 4 1;
+    stroke: #ff0000;
+    margin-left: 1500px;
+}
+
+#curtain-3 {
+    position: absolute;
+    z-index:280;
+    width: 10px;
+    height:650px;
+    stroke-width: 2;
+    stroke-dasharray: 4 1;
+    stroke: #ff0000;
+    margin-left: 2100px;
+    margin-top: 355px;
+}
+
+#curtain-4 {
+    position: absolute;
+    z-index:280;
+    width: 555px;
+    height:10px;
+    stroke-width: 2;
+    stroke-dasharray: 4 1;
+    stroke: #ff0000;
+    margin-left: 1530px;
+    margin-top: 1000px;
+}
+
+#curtain-5 {
+    position: absolute;
+    z-index:280;
+    width: 10px;
+    height:95px;
+    stroke-width: 2;
+    stroke-dasharray: 4 1;
+    stroke: #ff0000;
+    margin-left: 1523px;
+    margin-top: 1005px;
+}
+
+
+
+
+
+
+
+
+#booth-data {
+    position: absolute;
+    z-index: 200;
+    background-color: #FFFFFF;
+    margin-top: 1px;
+    margin-left: 85%;
+    width: 300px;
+    height: 44vw;
+    border: 1px solid #000000;
+
+}
+
+
+.booth-num {
+    font-size: 20px;
+    color: #000000;
+    line-height: 45px;
+    font-weight: bold;
+    font-family: Maven Pro;
+    text-align: center;
+    font-style: initial;
+  
+}
+
+.zoom:hover {
+    -webkit-transform: translate(3em,0);
+    -moz-transform: translate(3em,0);
+    -o-transform: translate(3em,0);
+    -ms-transform: translate(3em,0);
+    transform: scale(2);
+    
+    
+}
+.booth-num .overlaydisp {
+    visibility: hidden;
+  width: 175px;
+  background-color: rgb(0, 0, 2);
+ color: rgb(0, 0, 0);
+  text-align: left;
+  border-radius: 5.2px;
+  padding: 1px ;
+ /* Position the tooltip */
+ position: absolute;
+  z-index: 1;
+  opacity: 0.9;
+
+  
+}
+
+ul{
+font-size: 7px;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: wrap;
+
+
+}
+.booth-num:hover .overlaydisp {
+    visibility: visible;
+    background-color: #5c5c5c;
+   width: 175px;
+   height: 255px;
+}
+
+
+#main-booth-container {
+    display:block;
+    margin-top: 0;
+    padding:0;
+    width: 2500px;
+    height: 1100px;
+    border: 0px solid;
+    position: absolute;
+    z-index: 0;
+    text-align: center;
+}
+
+#main-booth-container:hover {
+	cursor: pointer;
+}
+/*End of General Settings*/
+
+/*Signs and general drawings*/
+.curtains {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+#lobbytxt-container {
+    position: absolute;
+    z-index: 210;
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-top: 500px;
+    margin-left: 100px;
+}
+
+#lobbytxt {
+    font-size: 20px;
+    color: #000000;
+    line-height: 25px;
+    font-weight: bold;
+    font-family: Maven Pro;
+    text-align: center;
+}
+
+#curtain-contain {
+    position: absolute;
+    z-index: 210;
+    width: 600px;
+    height: 10px;
+    font-size: 5px;
+    margin-top: 200px;
+    margin-left: 400px;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+#exit-txt {
+    position: absolute;
+    z-index: 210;
+    float: left;
+    width: 150px;
+    height: 70px;
+    margin-top: 200px;
+    margin-left: 400px;
+    font-size: 25px;
+    color: #ff0000;
+    line-height: 25px;
+    font-weight: bold;
+    font-family: Maven Pro;
+    text-align: center;
+}
+
+#entrance-txt {
+    position: absolute;
+    z-index: 210;
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-top: 750px;
+    margin-left: 370px;
+    font-size: 25px;
+    color: #75bf42;
+    line-height: 25px;
+    font-weight: bold;
+    font-family: Maven Pro;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/*End of Signs and general drawings*/
+
+
+/*Admin Booths, Stage and seats*/
+#field {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 100px;
+    height: 200px;
+    margin-top: 550px;
+    margin-left: 960px;
+    border: 1px solid;
+    background-color: #0A6B12;
+    opacity: 0.5;
+}
+
+#field-txt {
+    font-size: 20px;
+    color: #000000;
+    line-height: 25px;
+    font-weight: bold;
+    font-family: Maven Pro;
+    text-align: center;
+}
+
+#garden {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 90px;
+    height: 150px;
+    margin-top: 550px;
+    margin-left: 2000px;
+    border: 1px solid;
+    background-color: #007E9E;
+    opacity: 0.3;
+}
+
+#gardene-txt {
+    font-size: 10x;
+    color: #000000;
+    line-height: 45px;
+    font-weight: bold;
+    font-family: Maven Pro;
+    text-align: center;
+}
+
+#park{
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 90px;
+    height: 150px;
+    margin-top: 80px;
+    margin-left: 1300px;
+    border: 1px solid;
+    background-color: #0A6B12;
+    opacity: 0.3;
+}
+
+#park-txt {
+    font-size: 10x;
+    color: #000000;
+    line-height: 45px;
+    font-weight: bold;
+    font-family: Maven Pro;
+    text-align: center;
+}
+
+#mid-stage {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin-top: 240px;
+    margin-left: 950px;
+    border: 1px solid;
+    background-color: #EB882D;
+    opacity: 0.3;
+}
+
+#mid-stage-txt {
+    font-size: 10x;
+    color: #000000;
+    line-height: 45px;
+    font-weight: bold;
+    font-family: Maven Pro;
+    text-align: center;
+}
+
+.seats {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000000;
+    background-color: #EB882D;
+    opacity: 0.3;
+}
+
+#seat-top-1 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 90px;
+    margin-left: 1250px;
+}
+
+#seat-top-2 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 180px;
+    margin-left: 1250px;
+}
+
+#seat-top-3 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 85px;
+    margin-left: 1230px;
+}
+
+#seat-top-4 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 175px;
+    margin-left: 1230px;
+}
+
+#seat-top-5 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 85px;
+    margin-left: 1210px;
+}
+
+#seat-top-6 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 175px;
+    margin-left: 1210px;
+}
+
+#seat-top-7 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 85px;
+    margin-left: 1190px;
+}
+
+#seat-top-8 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 175px;
+    margin-left: 1190px;
+}
+
+#seat-top-9 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 85px;
+    margin-left: 1170px;
+}
+
+#seat-top-10 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 175px;
+    margin-left: 1170px;
+}
+
+#seat-top-11 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 85px;
+    margin-left: 1150px;
+}
+
+#seat-top-12 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 175px;
+    margin-left: 1150px;
+}
+
+#seat-top-13 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 85px;
+    margin-left: 1130px;
+}
+
+#seat-top-14 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 175px;
+    margin-left: 1130px;
+}
+
+#seat-top-15 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 85px;
+    margin-left: 1110px;
+}
+
+#seat-top-16 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 175px;
+    margin-left: 1110px;
+}
+
+#seat-top-17 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 85px;
+    margin-left: 1090px;
+}
+
+#seat-top-18 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 175px;
+    margin-left: 1090px;
+}
+
+#seat-top-19 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 85px;
+    margin-left: 1070px;
+}
+
+#seat-top-20 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 175px;
+    margin-left: 1070px;
+}
+
+#seat-top-21 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 85px;
+    margin-left: 1050px;
+}
+
+#seat-top-22 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 175px;
+    margin-left: 1050px;
+}
+
+#seat-top-23 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 85px;
+    margin-left: 1030px;
+}
+
+#seat-top-24 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 175px;
+    margin-left: 1030px;
+}
+
+#seat-top-25 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 85px;
+    margin-left: 1010px;
+}
+
+#seat-top-26 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 175px;
+    margin-left: 1010px;
+}
+
+#seat-mid-1 {
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 100px;
+    height: 120px;
+    margin-top: 300px;
+    margin-left: 950px;
+}
+
+#seat-mid-2 {
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 100px;
+    height: 120px;
+    margin-top: 315px;
+    margin-left: 950px;
+}
+
+#seat-mid-3 {
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 100px;
+    height: 120px;
+    margin-top: 330px;
+    margin-left: 950px;
+}
+
+
+#seat-con-9 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 565px;
+    margin-left: 1980px;
+    border: 1px solid;
+    
+}
+
+#seat-con-10 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 565px;
+    margin-left: 1960px;
+    border: 1px solid;
+    background-color: #EB882D;
+}
+
+#seat-con-11 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 565px;
+    margin-left: 1940px;
+    border: 1px solid;
+    background-color: #EB882D;
+}
+
+#seat-con-12 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 565px;
+    margin-left: 1920px;
+    border: 1px solid;
+    background-color: #EB882D;
+}
+
+#seat-con-13 {
+    position: absolute;
+    z-index: 100;
+    float: left;
+    width: 10px;
+    height: 120px;
+    margin-top: 565px;
+    margin-left: 1900px;
+    border: 1px solid;
+  background-color: #EB882D;
+  opacity: 0.3;
+}
+
+#room1-container {
+    position: absolute;
+    z-index: 210;
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-top: 400px;
+    margin-left: 350px;
+}
+
+.room-txt {
+    font-size: 20px;
+    color: #000000;
+    line-height: 25px;
+    font-weight: bold;
+    font-family: Maven Pro;
+    text-align: center;
+}
+
+#room2-container {
+    position: absolute;
+    z-index: 210;
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-top: 540px;
+    margin-left: 350px;
+}
+
+#room3-container {
+    position: absolute;
+    z-index: 210;
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-top: 630px;
+    margin-left: 350px;
+}
+
+
+/*End of Admin Booths, Stage and seats*/
+
+
+/*Booth Settings*/
+#booth600 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 600px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+   
+}
+
+#booth602 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth604 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth606 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth608 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth610 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth612 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth614 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth7 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 100px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth618 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 100px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth620 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth13 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 180px;
+    margin-left: 600px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    clear: both;
+}
+
+#booth12 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 180px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth11 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 180px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth10 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 180px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth9 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 180px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth8 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 180px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+
+#booth501 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 600px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    clear: both;
+}
+
+#booth503 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth505 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth507 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    border: 1px solid;
+     background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth509 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth511 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+
+#booth25 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 270px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth26 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth500 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 600px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    clear: both;
+}
+
+#booth502 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth504 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth506 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth508 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth512 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 100px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth518 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 170px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth520 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth522 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth524 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;  
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth526 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth530 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth532 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth534 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth536 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth401 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 600px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    clear: both;
+}
+
+#booth403 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth405 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+   background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth407 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color:#14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth409 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth413 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 100px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth419 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 170px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth421 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth423 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth425 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth427 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth431 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth433 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth435 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth437 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth400 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 600px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    clear: both;
+}
+
+#booth402 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth404 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth406 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth408 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth418 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 324px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth420 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth422 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth424 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth426 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth430 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth432 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth434 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth436 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth301 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 600px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    clear: both;
+}
+
+#booth303 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth305 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+     background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth307 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth309 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth319 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 324px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth321 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth323 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth325 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth327 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth331 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth333 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth335 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth337 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth300 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 600px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    clear: both;
+}
+
+#booth302 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth304 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth306 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth308 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth318 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 324px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth320 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth322 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth324 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth326 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth330 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth332 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth334 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth336 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth201 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 600px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    clear: both;
+}
+
+#booth203 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth205 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth207 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth209 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth219 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 324px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth221 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth223 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth225 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth227 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth231 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth233 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth235 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth237 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth200 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 600px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    clear: both;
+}
+
+#booth202 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth204 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth206 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth208 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth212 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 100px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth214 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth218 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 120px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth220 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth222 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth224 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth226 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth230 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth232 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth234 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth236 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth101 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 600px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    clear: both;
+}
+
+#booth103 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth105 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth107 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth109 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth113 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 100px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth115 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth119 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 120px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth121 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth123 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth125 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth127 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth131 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth133 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth135 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth137 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth100 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 550px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    clear: both;
+}
+
+#booth102 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth104 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth106 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth108 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth110 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth112 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth114 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth118 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 180px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth120 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth122 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth124 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth126 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth128 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #14be22;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#booth130 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    background-color: #e00707;
+    -webkit-transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -o-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+/*End of Booth Settings*/
